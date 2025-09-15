@@ -1,4 +1,4 @@
-const BASE_URL = "/api";
+const BASE_URL = import.meta.env.PROD ? "https://64.225.85.94.nip.io" : "/api";
 
 export type CommonResponse<T> = {
 	status: number;

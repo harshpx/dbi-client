@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="absolute top-0 left-0 z-20 flex h-screen w-screen items-center justify-center bg-black/40"
+	class="absolute top-0 left-0 z-20 flex min-h-screen min-w-screen items-center justify-center bg-black/40"
 >
 	<svg
 		width={size}

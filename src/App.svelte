@@ -90,8 +90,8 @@
 			imageUrl = URL.createObjectURL(file);
 		} else {
 			imageUrl = "";
-			prediction = null;
 		}
+		prediction = null;
 	};
 
 	const fetchImageFromUrl = () => {
@@ -102,9 +102,9 @@
 				alert("Please enter a valid image URL.");
 				textInput.value = "";
 				imageUrl = "";
-				prediction = null;
 			}
 		}
+		prediction = null;
 	};
 
 	const handleImageError = () => {
