@@ -96,7 +96,7 @@
 
 	const fetchImageFromUrl = () => {
 		if (textInput) {
-			if (validateImageUrl(textInput.value)) {
+			if (textInput.value) {
 				imageUrl = textInput.value;
 			} else {
 				alert("Please enter a valid image URL.");
@@ -161,10 +161,10 @@
 {#if loading}
 	<Loader />
 {/if}
-<div class="flex min-h-screen min-w-full flex-col overflow-x-hidden overflow-y-auto p-4 sm:p-8">
+<div class="flex min-h-screen min-w-full flex-col overflow-y-auto overflow-x-hidden p-4 sm:p-8">
 	<div class="relative flex grow flex-col items-center justify-center md:flex-row">
 		<!-- Theme Switch -->
-		<div class="absolute top-0 right-0"><ThemeSwitch /></div>
+		<div class="absolute right-0 top-0"><ThemeSwitch /></div>
 		<!-- Main -->
 		<div class="flex h-full w-full flex-col items-center justify-center md:w-1/2">
 			<!-- Title -->
@@ -229,7 +229,7 @@
 							type="text"
 							placeholder="Enter image URL"
 							class="w-3/5 rounded-xl border-2 border-dashed bg-transparent p-2 text-sm focus:border-solid
-						focus:ring-0 focus:outline-none sm:w-96"
+						focus:outline-none focus:ring-0 sm:w-96"
 						/>
 						<Button onClick={fetchImageFromUrl}>Fetch</Button>
 					</div>
